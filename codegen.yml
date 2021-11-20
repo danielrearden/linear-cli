@@ -1,0 +1,8 @@
+schema: "https://raw.githubusercontent.com/linear/linear/master/packages/sdk/src/schema.graphql"
+documents: "./operations/*.graphql"
+generates:
+  ./lib/operations.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typed-document-node

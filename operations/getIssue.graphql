@@ -1,0 +1,14 @@
+query getIssue($filter: IssueFilter!) {
+  issues(filter: $filter, first: 1) {
+    nodes {
+      id
+      title
+      identifier
+      branchName
+      url
+      team {
+        id
+      }
+    }
+  }
+}

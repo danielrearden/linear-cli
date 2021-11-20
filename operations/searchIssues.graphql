@@ -1,0 +1,14 @@
+query searchIssues($query: String!) {
+  issueSearch(query: $query, first: 10) {
+    nodes {
+      id
+      title
+      identifier
+      branchName
+      url
+      team {
+        id
+      }
+    }
+  }
+}

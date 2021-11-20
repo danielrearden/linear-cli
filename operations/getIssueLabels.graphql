@@ -1,0 +1,15 @@
+query getIssueLabels($first: Int!, $after: String) {
+  issueLabels(first: $first, after: $after) {
+    nodes {
+      name
+      id
+      team {
+        id
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

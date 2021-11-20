@@ -1,0 +1,11 @@
+mutation createIssue($input: IssueCreateInput!) {
+  issueCreate(input: $input) {
+    issue {
+      id
+      branchName
+      identifier
+      url
+    }
+    success
+  }
+}
