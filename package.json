@@ -1,6 +1,6 @@
 {
   "name": "@contrawork/linear-cli",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "An unofficial CLI tool for Linear",
   "author": "Daniel Rearden",
   "homepage": "https://github.com/danielrearden/linear-cli",
