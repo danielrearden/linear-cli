@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import inquirer from "inquirer";
 import inquirerAutoComplete from "inquirer-autocomplete-prompt";
 import yargs from "yargs";
