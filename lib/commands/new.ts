@@ -11,9 +11,9 @@ import {
   getWorkflowStates,
 } from "../routines";
 
-export const add = [
-  "add",
-  "Add an issue.\n",
+export const newCommand = [
+  "new",
+  "Create a new issue.\n",
   {},
   async () => {
     const client = await createClient();

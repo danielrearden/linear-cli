@@ -1,17 +1,24 @@
 import inquirer from "inquirer";
 import inquirerAutoComplete from "inquirer-autocomplete-prompt";
 import yargs from "yargs";
-import { add, branch, clear, login, logout, status } from "./commands";
+import {
+  branchCommand,
+  clearCommand,
+  loginCommand,
+  logoutCommand,
+  newCommand,
+  statusCommand,
+} from "./commands";
 
 inquirer.registerPrompt("autocomplete", inquirerAutoComplete);
 
 yargs(process.argv.slice(2))
   .scriptName("linear")
-  .command(...login)
-  .command(...logout)
-  .command(...add)
-  .command(...branch)
-  .command(...status)
-  .command(...clear)
+  .command(...loginCommand)
+  .command(...logoutCommand)
+  .command(...newCommand)
+  .command(...branchCommand)
+  .command(...statusCommand)
+  .command(...clearCommand)
   .completion("completion", "Generate completion script.")
   .help().argv;

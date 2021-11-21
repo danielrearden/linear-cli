@@ -4,7 +4,7 @@ import keytar from "keytar";
 import { KEYCHAIN_ACCOUNT, KEYCHAIN_SERVICE } from "../constants";
 import { createClient, getViewer } from "../routines";
 
-export const login = [
+export const loginCommand = [
   "login",
   "Authenticate using personal API key. Generate a new API key at https://linear.app/contra/settings/api \n",
   {},

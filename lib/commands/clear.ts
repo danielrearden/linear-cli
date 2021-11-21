@@ -2,7 +2,7 @@ import chalk from "chalk";
 import { cache } from "../cache";
 import { getCacheDir } from "../routines";
 
-export const clear = [
+export const clearCommand = [
   "clear",
   `Clear the cache. This should be done when there are changes to your Linear settings. Cache directory:\n${getCacheDir()}\n`,
   {},

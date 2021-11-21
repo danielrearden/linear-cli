@@ -2,7 +2,7 @@ import inquirer from "inquirer";
 import { $ } from "zx";
 import { createClient, searchIssues } from "../routines";
 
-export const branch = [
+export const branchCommand = [
   "branch",
   "Create and checkout a new branch for a specific issue.\n",
   {},

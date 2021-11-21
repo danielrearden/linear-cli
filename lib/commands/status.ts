@@ -10,7 +10,7 @@ import {
 } from "../routines";
 import { Issue } from "../types";
 
-export const status = [
+export const statusCommand = [
   "status",
   "Update the status of an issue. Uses the current git branch name to identify the issue to update when possible.\n",
   {},
