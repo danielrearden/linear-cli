@@ -2,11 +2,23 @@
   "name": "@contrawork/linear-cli",
   "version": "1.0.0",
   "description": "An unofficial CLI tool for Linear",
+  "author": "Daniel Rearden",
+  "homepage": "https://github.com/danielrearden/linear-cli",
+  "bugs": {
+    "url": "https://github.com/danielrearden/linear-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielrearden/linear-cli.git"
+  },
+  "keywords": [
+    "linear",
+    "cli"
+  ],
+  "license": "MIT",
   "bin": {
     "linear": "dist/bin"
   },
-  "author": "Daniel Rearden",
-  "license": "MIT",
   "scripts": {
     "codegen": "yarn graphql-codegen",
     "prepublishOnly": "rimraf dist && yarn codegen && tsc"
