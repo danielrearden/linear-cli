@@ -20,7 +20,7 @@
     "dist"
   ],
   "bin": {
-    "linear": "dist/bin"
+    "linear": "./dist/bin.js"
   },
   "scripts": {
     "codegen": "yarn graphql-codegen",
