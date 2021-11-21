@@ -16,6 +16,9 @@
     "cli"
   ],
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "bin": {
     "linear": "dist/bin"
   },
@@ -24,7 +27,6 @@
     "prepublishOnly": "rimraf dist && yarn codegen && tsc"
   },
   "dependencies": {
-    "@linear/sdk": "^1.21.0",
     "cachedir": "^2.3.0",
     "chalk": "^4.1.2",
     "flat-cache": "^3.0.4",
