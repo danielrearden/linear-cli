@@ -2,7 +2,7 @@ import inquirer from "inquirer";
 import inquirerAutoComplete from "inquirer-autocomplete-prompt";
 import yargs from "yargs";
 import {
-  branchCommand,
+  checkoutCommand,
   clearCommand,
   loginCommand,
   logoutCommand,
@@ -17,7 +17,7 @@ yargs(process.argv.slice(2))
   .command(...loginCommand)
   .command(...logoutCommand)
   .command(...newCommand)
-  .command(...branchCommand)
+  .command(...checkoutCommand)
   .command(...statusCommand)
   .command(...clearCommand)
   .completion("completion", "Generate completion script.")

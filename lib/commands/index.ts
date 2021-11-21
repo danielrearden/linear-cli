@@ -1,4 +1,4 @@
-export * from "./branch";
+export * from "./checkout";
 export * from "./clear";
 export * from "./login";
 export * from "./logout";
