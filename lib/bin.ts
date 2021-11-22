@@ -23,4 +23,5 @@ yargs(process.argv.slice(2))
   .command(...statusCommand)
   .command(...clearCommand)
   .completion("completion", "Generate completion script.")
+  .demandCommand(1, "")
   .help().argv;
